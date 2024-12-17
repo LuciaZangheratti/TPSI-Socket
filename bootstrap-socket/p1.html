@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket:Approfondimento</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003f5c;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="p1.html">
+                <img src="logo1.png" alt="Logo" class="d-inline-block align-text-top">Cos'è una socket?</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="info.html">Informatica</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="sistemi.html">Sistemi</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="glossario.html">Glossario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduzione -->
+    <section id="introduzione" class="py-5" style="background-color: #465775; color: white;">
+        <div class="container text-center">
+            <h1 class="mb-4 fw-bold">Socket: Approfondimento</h1>
+            <p>Scopri tutto ciò che c'è da sapere sui socket: dalle basi alle applicazioni più avanzate nella comunicazione tra client e server.</p>
+        </div>
+    </section>
+
+    <!-- Sezione 1-->
+    <section id="sezione1" class="py-5" style="background-color: #edf2f4;">
+        <div class="container">
+            <h2 class="fw-bold" style="color: #003f5c;">1. Cos'è un Socket?</h2>
+            <p>
+                Il termine socket si indica una teoria software progettata per la trasmissione e la ricezione di dati attraverso una rete. 
+            </p>
+            <p>È il punto in cui il codice applicativo di un processo accede al canale di comunicazione per mezzo di una porta, ottenendo una comunicazione tra processi che lavorano su due macchine fisicamente separate.</p>
+            <p>Uno dei due processi che comunicano è chiamato Server (il receiver) e l’altro Client (il sender). Tra i due processi il server è quello che ha controllo maggiore, poiché è il processo che inizialmente crea la socket. </p>
+            <p>Più client possono comunicare attraverso la stessa socket, ma solo un server può essere associato ad una definita socket.</p>
+        </div>
+    </section>
+
+    <!-- Sezione 2-->
+    <section id="sezione2" class="py-5" style="background-color: #2f4b7c; color: white;">
+        <div class="container">
+            <h2 class="fw-bold">2. Tipi di Socket</h2>
+            <p>Il tipo di una socket definisce la modalità di comunicazione che una socket usa per inviare dati:</p>
+            <ul>
+                <li><strong>Streaming Socket (SOCK_STREAM):</strong> Fornisce una connessione sequenziale, affidabile e full-duplex. Il protocollo TCP supporta questo tipo di socket.                </li>
+                <li><strong>Datagram socket (SOCK_DGRAM):</strong> Supportano l’invio di datagrammi, ovvero pacchetti di dati indipendenti e inaffidabili, con una lunghezza massima predefinita
+                    Il protocollo UDP supporta questo tipo di socket.</li>
+            </ul>
+
+            <p>Quindi:</p>
+            <ul>
+                <li>AF_INET + SOCK_STREAM determinano una connessione TCP</li>
+                <li>AF_INET + SOCK_DGRAM determinano una trasmissione UDP</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sezione 3-->
+    <section id="sezione3" class="py-5" style="background-color: #edf2f4;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Colonna di Testo -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold" style="color: #003f5c;">3. Comunicazione Client-Server</h2>
+                    <p>
+                        Una socket che usa la famiglia di protocolli TCP/IP è univocamente determinata da un indirizzo internet, un protocollo di comunicazione (TCP o UDP) e un numero di porta.
+                    </p>
+                    <ol>
+                        <li>Durante l’handshake a tre vie il TCP server crea un nuova socket di connessione dedicata a quel particolare client</li>
+                        <li>Il client deve contattare il server e il programma server deve essere in esecuzione come processo di background. Quindi, il programma server deve avere una porta (socket) che dia il benvenuto al contatto iniziale stabilito da un processo client in esecuzione.</li>
+                        <li>Il client contatta il server tramite: la creazione di una socket locale e la specifica di un indirizzo del processo server (IP, numero di porta relativi al processo).</li>
+                        <li>Dopo la creazione della socket nel client, TCP avvia un handshake a tre vie (tre messaggi di SYNC e ACK) e stabilisce una connessione TCP con il server.
+                            Una volta completata la comunicazione, entrambi i socket vengono chiusi.</li>
+                    </ol>
+                    <p>
+                        <strong> Questa struttura è alla base della maggior parte delle applicazioni di rete moderne, come il web browsing, le email e lo streaming.</strong>
+                    </p>
+                </div>
+    
+                <!-- Colonna con Immagine -->
+                <div class="col-lg-6 text-center">
+                    <img src="img1.png" alt="Comunicazione Client-Server" class="img-fluid rounded shadow-lg">
+                    <p class="mt-3 text-muted">Rappresentazione grafica della comunicazione tra client e server.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background-color: #003f5c;">
+        <div class="container">
+            <p>&copy; 2024 Il mondo della Socket. Tutti i diritti riservati.</p>
+            <p><a href="#" class="text-white text-decoration-underline">Zangheratti Lucia</a> | <a href="#" class="text-white text-decoration-underline">5E</a></p>
+        </div>
+    </footer>
+</body>
+</html>

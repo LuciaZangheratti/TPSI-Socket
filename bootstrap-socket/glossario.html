@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+    body {
+    background-image: url('sfondo.png'); 
+    background-size: cover; /* L'immagine copre l'intero sfondo */
+    background-repeat: no-repeat; /* Evita la ripetizione */
+    background-attachment: fixed; /* L'immagine resta ferma durante lo scroll */
+    }
+    </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2a4d69;">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="glossario.html">
+            <img src="logo1.png" alt="Logo" class="d-inline-block align-text-top">Glossario</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="homepage.html">Homepage</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="p1.html">Che cos'è un Socket</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="sistemi.html">Sistemi</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="info.html">Informatica</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Header -->
+   <header class="py-5" style="background-color: #4b86b4; color: white;">
+        <div class="container text-center" style="position: relative; z-index: 1;">
+            <h1 class="fw-bold">Glossario dei Termini</h1>
+            <p class="lead">Definizioni e spiegazioni dei concetti utilizzati nel nostro sito</p>
+        </div>
+    </header>
+    
+    <section id="glossario" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Socket</h5>
+                        <p>Teoria software progettata per la trasmissione e la ricezione di dati attraverso una rete, per inviare e ricevere dati tra un client e un server.</p>
+                    </div>
+                </div>
+                
+                <!-- 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>TCP/IP</h5>
+                        <p>Un protocollo di comunicazione che consente il trasferimento affidabile di dati tra dispositivi connessi alla rete.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>HTTP</h5>
+                        <p>Protocollo di trasferimento ipertestuale utilizzato per comunicare tra client (come i browser) e server web.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>UDP</h5>
+                        <p>Un protocollo di comunicazione senza connessione che offre una trasmissione veloce ma senza garanzie di affidabilità.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>VoIP</h5>
+                        <p>La VoIP (Voice over IP) è una tecnologia che permette la trasmissione di voce e video attraverso la rete Internet.</p>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Chat Room Multiutente</h5>
+                        <p>Area virtuale in cui si svolgono le comunicazioni in tempo reale fra due o più utenti collegati allo stesso canale telematico.</p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Threading</h5>
+                        <p>Suddivisione di un processo in due o più sottoprocessi(istanze).</p>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>File Server</h5>
+                        <p>E' un server centrale, che permette ai client connessi in una rete di computer di accedere ai file archiviati su disco.</p>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Ping personalizzato</h5>
+                        <p>Applicazione personalizzata che simula il comando ping per verificare la connessione con un dispositivo remoto.</p>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>AF-INET</h5>
+                        <p>Famiglia di indirizzi che fornisce la comunicazione tra processi che vengono eseguiti sullo stesso sistema o su sistemi differenti.</p>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>SOCK_STREAM</h5>
+                        <p>Tipologia di socket che fornisce una connessione sequenziale, affidabile e full-duplex.</p>
+                    </div>
+                </div>
+
+                <!-- 12 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>SOCK_DGRAM</h5>
+                        <p>Tipologia di socket che supporta l’invio di datagrammi, ovvero pacchetti di dati indipendenti e inaffidabili.</p>
+                    </div>
+                </div>
+
+                <!-- 13 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Messaggi di SYN e ACK</h5>
+                        <p>Il flag SYN indica l'accordo del server a stabilire una connessione e il flag ACK conferma la ricezione del pacchetto SYN del client.</p>
+                    </div>
+                </div>
+
+                <!-- 14 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Email (SMTP/POP3/IMAP)</h5>
+                        <ul>
+                            <li><strong>SMTP:</strong>gestisce la trasmissione delle email tra i server</li>
+                            <li><strong>POP3:</strong>scarica le email su un dispositivo</li>
+                            <li><strong>IMAP:</strong>sincronizza le email tra più dispositivi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 15 -->
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>FTP (File Transfer Protocol)</h5>
+                        <p>Protocollo usato per trasferire file tra computer su Internet.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="term-card">
+                        <h5>Link esterni:</h5>
+                        <p><a href="https://vitolavecchia.altervista.org/che-cose-a-cosa-serve-e-tipi-di-socket-in-informatica/">Vai al link</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background-color: #003f5c;">
+        <div class="container">
+            <p>&copy; 2024 Il mondo della Socket. Tutti i diritti riservati.</p>
+            <p><a href="#" class="text-white text-decoration-underline">Zangheratti Lucia</a> | <a href="#" class="text-white text-decoration-underline">5E</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

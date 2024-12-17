@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket: Applicazioni e Sistemi</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2a4d69;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="info.html">
+                <img src="logo1.png" alt="Logo" class="d-inline-block align-text-top">Applicazioni con Socket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="p1.html">Che cos'è un Socket</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="sistemi.html">Sistemi</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="glossario.html">Glossario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5" style="background-color: #4b86b4; color: white;">
+        <div class="container text-center" style="position: relative; z-index: 1;">
+            <h1 class="fw-bold">Applicazioni pratiche nell'informatica</h1>
+        </div>
+    </header>
+
+
+    <!-- Progetti pratici -->
+    <section id="progetti" class="py-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <!-- Chat Room Multiutente -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Chat Room Multiutente (Socket TCP)</h5>
+                            <p class="card-text">
+                                Una chat room multiutente consente a diversi utenti di comunicare in tempo reale. Il server crea una socket e ascolta nuove connessioni. Ogni client si connette al server tramite una socket dedicata, e il server inoltra i messaggi ricevuti da un client agli altri utenti.
+                            </p>
+                            <h6 class="fw-bold">Tecnologie</h6>
+                            <ul>
+                                <li>Python (libreria socket per server e client)</li>
+                                <li>Threading (gestire più connessioni simultanee)</li>
+                            </ul>
+                            <h6 class="fw-bold">Funzionalità Avanzate</h6>
+                            <ul>
+                                <li>Autenticazione dell'utente</li>
+                                <li>Crittografia sui messaggi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- File Server -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">File Server</h5>
+                            <p class="card-text">
+                                Un file server consente di inviare e ricevere file tramite socket. Il server ascolta richieste di download/upload da parte dei client e invia i file in blocchi di dati per gestire file di grandi dimensioni.
+                            </p>
+                            <h6 class="fw-bold">Protocolli</h6>
+                            <ul>
+                                <li>TCP (per garantire l'affidabilità nella trasmissione)</li>
+                            </ul>
+                            <h6 class="fw-bold">Estensioni</h6>
+                            <ul>
+                                <li>Compressione dei file prima della trasmissione</li>
+                                <li>Logging delle attività per motivi di sicurezza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Ping Personalizzato -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-light shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Ping Personalizzato</h5>
+                            <p class="card-text">
+                                Un'applicazione che simula il comando ping per verificare la connessione con un dispositivo remoto. Il client invia pacchetti ICMP o messaggi TCP/UDP al server e misura il tempo di risposta per ogni pacchetto.
+                            </p>
+                            <h6 class="fw-bold">Applicazioni</h6>
+                            <ul>
+                                <li>Monitoraggio delle prestazioni di rete</li>
+                                <li>Identificazione di problemi di latenza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="img2.JPG" alt="Immagine descrittiva" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background-color: #2a4d69;">
+        <div class="container">
+            <p>&copy; 2024 Il mondo della Socket. Tutti i diritti riservati.</p>
+            <p><a href="#" class="text-white text-decoration-underline">Zangheratti Lucia</a> | <a href="#" class="text-white text-decoration-underline">5E</a></p>
+        </div>
+    </footer>
+</body>
+</html>
